@@ -1,9 +1,9 @@
 [project]
-name = "crm"
+name = "prm"
 authors = [
     { name = "Frappe Technologies Pvt. Ltd.", email = "shariq@frappe.io"}
 ]
-description = "Kick-ass Open Source CRM"
+description = "Comprehensive Partner Relationship Management System"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
