@@ -5,7 +5,7 @@ import { defineStore } from 'pinia'
 import { createListResource } from 'frappe-ui'
 import { reactive, h } from 'vue'
 
-export const statusesStore = defineStore('crm-statuses', () => {
+export const statusesStore = defineStore('prm-statuses', () => {
   let leadStatusesByName = reactive({})
   let dealStatusesByName = reactive({})
   let communicationStatusesByName = reactive({})

@@ -2,11 +2,11 @@ import { defineStore } from 'pinia'
 import { createResource } from 'frappe-ui'
 import { reactive } from 'vue'
 
-export const organizationsStore = defineStore('crm-organizations', () => {
+export const organizationsStore = defineStore('prm-organizations', () => {
   let organizationsByName = reactive({})
 
   const organizations = createResource({
-    url: 'crm.api.session.get_organizations',
+    url: 'prm.api.session.get_organizations',
     cache: 'organizations',
     initialData: [],
     auto: true,

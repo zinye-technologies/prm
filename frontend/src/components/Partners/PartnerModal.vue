@@ -439,8 +439,8 @@ const savePartner = async () => {
 
   try {
     const method = isEditing.value
-      ? 'crm.api.partner.update_partner'
-      : 'crm.api.partner.create_partner'
+      ? 'prm.api.partner.update_partner'
+      : 'prm.api.partner.create_partner'
 
     const params = isEditing.value
       ? {

@@ -316,7 +316,7 @@ const tabs = [
 
 // Resources
 const partner = createResource({
-  url: 'crm.api.partner.get_partner_details',
+  url: 'prm.api.partner.get_partner_details',
   params: computed(() => ({
     partner_name: partnerId.value
   })),

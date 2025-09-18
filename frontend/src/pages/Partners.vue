@@ -208,7 +208,7 @@ const filters = reactive({
 
 // Resources
 const partners = createResource({
-  url: 'crm.api.partner.get_partner_list',
+  url: 'prm.api.partner.get_partner_list',
   params: computed(() => ({
     filters: Object.fromEntries(
       Object.entries(filters).filter(([_, value]) => value)

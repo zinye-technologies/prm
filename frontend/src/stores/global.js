@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { getCurrentInstance, ref } from 'vue'
 
-export const globalStore = defineStore('crm-global', () => {
+export const globalStore = defineStore('prm-global', () => {
   const app = getCurrentInstance()
   const { $dialog, $socket } = app.appContext.config.globalProperties
 

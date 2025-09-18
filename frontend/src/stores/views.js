@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { createResource } from 'frappe-ui'
 import { reactive, ref } from 'vue'
 
-export const viewsStore = defineStore('crm-views', (doctype) => {
+export const viewsStore = defineStore('prm-views', (doctype) => {
   let viewsByName = reactive({})
   let pinnedViews = ref([])
   let publicViews = ref([])
@@ -11,9 +11,9 @@ export const viewsStore = defineStore('crm-views', (doctype) => {
 
   // Views
   const views = createResource({
-    url: 'crm.api.views.get_views',
+    url: 'prm.api.views.get_views',
     params: { doctype: doctype || '' },
-    cache: 'crm-views',
+    cache: 'prm-views',
     initialData: [],
     auto: true,
     transform(views) {

@@ -4,7 +4,7 @@ import { userResource } from './user'
 import router from '@/router'
 import { ref, computed } from 'vue'
 
-export const sessionStore = defineStore('crm-session', () => {
+export const sessionStore = defineStore('prm-session', () => {
   function sessionUser() {
     let cookies = new URLSearchParams(document.cookie.split('; ').join('&'))
     let _sessionUser = cookies.get('user_id')
@@ -35,7 +35,7 @@ export const sessionStore = defineStore('crm-session', () => {
     onSuccess() {
       userResource.reset()
       user.value = null
-      window.location.href = '/login?redirect-to=/crm'
+      window.location.href = '/login?redirect-to=/prm'
     },
   })
 
