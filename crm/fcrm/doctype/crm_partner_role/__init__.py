@@ -1,0 +1,1 @@
+# Partner Role DocType module

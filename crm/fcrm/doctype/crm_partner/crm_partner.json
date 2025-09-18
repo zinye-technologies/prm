@@ -1,0 +1,470 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-17 23:40:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "partner_details_section",
+  "naming_series",
+  "partner_name",
+  "partner_code",
+  "column_break_basic",
+  "partner_type",
+  "partner_tier",
+  "status",
+  "contact_information_section",
+  "primary_contact",
+  "email",
+  "phone",
+  "website",
+  "column_break_contact",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "state",
+  "country",
+  "postal_code",
+  "business_details_section",
+  "industry",
+  "company_size",
+  "annual_revenue",
+  "years_in_business",
+  "column_break_business",
+  "territory",
+  "products_specialization",
+  "services_offered",
+  "target_market",
+  "agreement_details_section",
+  "partner_agreement",
+  "agreement_start_date",
+  "agreement_end_date",
+  "commission_rate",
+  "column_break_agreement",
+  "discount_level",
+  "credit_limit",
+  "payment_terms",
+  "performance_metrics_section",
+  "total_deals_closed",
+  "total_revenue_generated",
+  "average_deal_size",
+  "lead_conversion_rate",
+  "column_break_performance",
+  "last_deal_date",
+  "ytd_revenue",
+  "partner_score",
+  "certification_level",
+  "onboarding_section",
+  "onboarding_status",
+  "onboarding_completion_date",
+  "assigned_partner_manager",
+  "column_break_onboarding",
+  "training_completed",
+  "certification_obtained",
+  "portal_access_enabled",
+  "notes_section",
+  "internal_notes",
+  "partner_feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "partner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "PART-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Partner Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_code",
+   "fieldtype": "Data",
+   "label": "Partner Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "partner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Partner Type",
+   "options": "\nReseller\nDistributor\nAffiliate\nSystem Integrator\nConsultant\nTechnology Partner\nChannel Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner_tier",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Partner Tier",
+   "options": "\nBronze\nSilver\nGold\nPlatinum\nDiamond",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nPending Approval\nActive\nInactive\nSuspended\nTerminated",
+   "reqd": 1,
+   "default": "Pending Approval"
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "primary_contact",
+   "fieldtype": "Data",
+   "label": "Primary Contact Person"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "column_break_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State/Province"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "business_details_section",
+   "fieldtype": "Section Break",
+   "label": "Business Details"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "CRM Industry"
+  },
+  {
+   "fieldname": "company_size",
+   "fieldtype": "Select",
+   "label": "Company Size",
+   "options": "\n1-10 employees\n11-50 employees\n51-200 employees\n201-500 employees\n501-1000 employees\n1000+ employees"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Currency",
+   "label": "Annual Revenue"
+  },
+  {
+   "fieldname": "years_in_business",
+   "fieldtype": "Int",
+   "label": "Years in Business"
+  },
+  {
+   "fieldname": "column_break_business",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "products_specialization",
+   "fieldtype": "Small Text",
+   "label": "Products Specialization"
+  },
+  {
+   "fieldname": "services_offered",
+   "fieldtype": "Small Text",
+   "label": "Services Offered"
+  },
+  {
+   "fieldname": "target_market",
+   "fieldtype": "Small Text",
+   "label": "Target Market"
+  },
+  {
+   "fieldname": "agreement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Agreement Details"
+  },
+  {
+   "fieldname": "partner_agreement",
+   "fieldtype": "Link",
+   "label": "Partner Agreement",
+   "options": "File"
+  },
+  {
+   "fieldname": "agreement_start_date",
+   "fieldtype": "Date",
+   "label": "Agreement Start Date"
+  },
+  {
+   "fieldname": "agreement_end_date",
+   "fieldtype": "Date",
+   "label": "Agreement End Date"
+  },
+  {
+   "fieldname": "commission_rate",
+   "fieldtype": "Percent",
+   "label": "Commission Rate (%)"
+  },
+  {
+   "fieldname": "column_break_agreement",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount_level",
+   "fieldtype": "Percent",
+   "label": "Discount Level (%)"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Select",
+   "label": "Payment Terms",
+   "options": "\nNet 15\nNet 30\nNet 45\nNet 60\nCOD\nPrepaid"
+  },
+  {
+   "fieldname": "performance_metrics_section",
+   "fieldtype": "Section Break",
+   "label": "Performance Metrics"
+  },
+  {
+   "fieldname": "total_deals_closed",
+   "fieldtype": "Int",
+   "label": "Total Deals Closed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_revenue_generated",
+   "fieldtype": "Currency",
+   "label": "Total Revenue Generated",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average_deal_size",
+   "fieldtype": "Currency",
+   "label": "Average Deal Size",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lead_conversion_rate",
+   "fieldtype": "Percent",
+   "label": "Lead Conversion Rate (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_performance",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_deal_date",
+   "fieldtype": "Date",
+   "label": "Last Deal Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ytd_revenue",
+   "fieldtype": "Currency",
+   "label": "YTD Revenue",
+   "read_only": 1
+  },
+  {
+   "fieldname": "partner_score",
+   "fieldtype": "Int",
+   "label": "Partner Score (0-100)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "certification_level",
+   "fieldtype": "Select",
+   "label": "Certification Level",
+   "options": "\nBasic\nIntermediate\nAdvanced\nExpert"
+  },
+  {
+   "fieldname": "onboarding_section",
+   "fieldtype": "Section Break",
+   "label": "Onboarding & Training"
+  },
+  {
+   "fieldname": "onboarding_status",
+   "fieldtype": "Select",
+   "label": "Onboarding Status",
+   "options": "\nNot Started\nIn Progress\nCompleted\nStalled",
+   "default": "Not Started"
+  },
+  {
+   "fieldname": "onboarding_completion_date",
+   "fieldtype": "Date",
+   "label": "Onboarding Completion Date"
+  },
+  {
+   "fieldname": "assigned_partner_manager",
+   "fieldtype": "Link",
+   "label": "Assigned Partner Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_onboarding",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "training_completed",
+   "fieldtype": "Check",
+   "label": "Training Completed"
+  },
+  {
+   "fieldname": "certification_obtained",
+   "fieldtype": "Check",
+   "label": "Certification Obtained"
+  },
+  {
+   "fieldname": "portal_access_enabled",
+   "fieldtype": "Check",
+   "label": "Portal Access Enabled"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes & Feedback"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "partner_feedback",
+   "fieldtype": "Text Editor",
+   "label": "Partner Feedback"
+  }
+ ],
+ "has_web_view": 1,
+ "icon": "fa fa-handshake-o",
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2024-09-17 23:40:00.000000",
+ "modified_by": "Administrator",
+ "module": "FCRM",
+ "name": "CRM Partner",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CRM User",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Partner",
+   "if_owner": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "partner_name,partner_type,partner_tier,status,territory",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "partner_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
